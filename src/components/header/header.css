@@ -1,0 +1,158 @@
+header {
+  height: 100vh;
+  padding-top: 5rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.hd1{
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.texHighlighter {
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(251, 255, 0),
+        0 0 82px rgb(255, 187, 0),
+        0 0 92px rgb(255, 60, 0),
+        0 0 102px rgb(255, 0, 0),
+        0 0 151px rgb(251, 255, 0);
+  }
+
+/* ============= top btns ======== */
+
+.TopTwoBtn {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* =============socials ======== */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: absolute;
+  left: 5rem;
+  bottom: 4rem;
+  background-color: black;
+  padding: 0.6rem;
+  border-radius: 20px;
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 1.8rem;
+  background: var(--color-primary);
+}
+
+/* ========image======== */
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 17rem;
+  height: 20rem;
+  position: absolute;
+  left: calc(50% - 8.5rem);
+  margin-top: 1rem;
+  border-radius: 7rem 7rem 0 0;
+  overflow: hidden;
+  padding: 0 3rem 0 2.5rem;
+}
+
+.header__ppng{
+    position: absolute;
+    height: 60%;
+    width: 30%;
+    left: 55rem;
+    bottom: 0rem;
+}
+
+/* === scroll down === */
+.scroll__down {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 2.5rem;
+  transform: rotate(30deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+
+}
+
+/* for tablers */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 80vh;
+  }
+
+  .me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 20rem;
+    height: 35rem;
+    position: absolute;
+    left: calc(50% - 10rem);
+    margin-top: 2rem;
+    border-radius: 7rem 7rem 0 0;
+    overflow: hidden;
+    padding: 3rem 1.5rem 0 0;
+  }
+
+  .header__socials {
+    left: 5rem;
+    bottom: 10rem;
+  }
+
+  .scroll__down {
+    bottom: 13rem;
+  }
+}
+
+/* for small devices */
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .scroll__down {
+    display: none;
+  }
+
+  .tes {
+    padding: 1rem 0 0 0;
+  }
+
+  .header__socials {
+    z-index: 3;
+    left: 1.5rem;
+    bottom: 8rem;
+  }
+
+  .me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 20rem;
+    height: 35rem;
+    position: absolute;
+    left: calc(50% - 10rem);
+    margin-top: 2rem;
+    border-radius: 7rem 7rem 0 0;
+    overflow: hidden;
+    padding: 2.5rem 0 0 1rem;
+  }
+
+  img{
+    width: 50%;
+    padding-left: 10px;
+  }
+}

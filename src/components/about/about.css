@@ -1,0 +1,247 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 30% 55%;
+  gap: 15%;
+}
+
+.about__heading2 {
+  padding-top: 2rem;
+}
+
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.about__me__image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: var(--transition);
+}
+
+.about__me__image:hover {
+  transform: rotate(0);
+}
+
+/* lets talk btn */
+.about__btn {
+  padding-top: 3.5rem;
+}
+
+.about__content__conatiner {
+  padding-top: 4rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-left: 6rem;
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.about__card {
+  background: var(--color-bg-variant);
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+  width: 20rem;
+}
+
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.about__icons {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+}
+
+.about__card h5 {
+  font-size: 1.2rem;
+}
+
+.about__card small {
+  font-size: 0.8rem;
+  color: var(--color-light);
+}
+
+.yt__icon {
+  display: flex;
+  justify-content: center;
+  color: var(--color-white);
+  animation: blink 1.3s infinite;
+  margin-top: 0.3rem;
+}
+
+.view__pro {
+  font-size: 15px;
+  color: var(--color-bg-variant);
+  animation: blink 1.3s infinite;
+  font-weight: bold;
+}
+
+.view__project__tab {
+  height: 1.5rem;
+  width: 50%;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-left: 25%;
+}
+
+.view__project__tab:hover {
+  background-color: var(--color-primary-variant);
+  transition: var(--transition);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+section p {
+  position: relative;
+  width: 100%;
+}
+
+/* .ptag__sectag {
+  position: relative;
+  width: 70vw;
+  padding: 1.5rem 10rem 2rem 3rem;
+  left: 4rem;
+} */
+
+.ptag__heading__stars {
+  color: var(--color-primary);
+  font-weight: bold;
+  text-align: center;
+}
+
+.emp__details__head {
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.li__points {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+}
+
+/* for tablers */
+@media screen and (max-width: 1024px) {
+  .about__container .about__content__conatiner {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+
+  .about__content {
+    text-align: center;
+    margin-left: -3rem;
+  }
+
+  .about__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* for small devices */
+@media screen and (max-width: 600px) {
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about__content__conatiner{
+    padding-left: 20%;
+  }
+
+  .about__me {
+    width: 85%;
+    margin: 0 0 -3rem 2rem;
+  }
+
+  .intro__txt {
+    text-align: center;
+  }
+
+  .about__btn {
+    padding-top: 1rem;
+    text-align: center;
+    margin-bottom: 15%;
+  }
+
+  .about__content {
+    text-align: center;
+    margin-left: -3rem;
+  }
+
+  .about__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Employment details */
+
+  .ptag__sectag {
+    position: relative;
+    width: 80vw;
+    padding: 1.5rem 10rem 2rem 3rem;
+  }
+
+  .respon__div {
+    width: 80vw;
+  }
+
+  .ptag__heading__stars {
+    text-align: center;
+  }
+
+  .emp__details__head {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
